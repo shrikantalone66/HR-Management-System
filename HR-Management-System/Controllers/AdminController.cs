@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
-using HR_Management_System.Models;
+//using HR_Management_System.Models;
 
 namespace HR_Management_System.Controllers
 {
@@ -16,13 +16,13 @@ namespace HR_Management_System.Controllers
         public IActionResult AddEmployee()
 
         {
-            Models.Employee obj = new Employee();
-            obj.EmpId = 10;
-            obj.EmpName= "Shrikant";
-            obj.EmpMobile = 8329497657;
-            obj.EmpEmailId = "shrikantalone66@gmail.com";
-            obj.EmpDesignation = "Software Enginner";
-            obj.EmpSalary = 20000;
+            //Models.Employee obj = new Employee();
+            //obj.EmpId = 10;
+            //obj.EmpName= "Shrikant";
+            //obj.EmpMobile = 8329497657;
+            //obj.EmpEmailId = "shrikantalone66@gmail.com";
+            //obj.EmpDesignation = "Software Enginner";
+            //obj.EmpSalary = 20000;
 
 
             return View();

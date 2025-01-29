@@ -1,16 +1,19 @@
-﻿namespace HR_Management_System.Models
+﻿using System;
+using System.Collections.Generic;
+
+namespace HR_Management_System.Models;
+
+public partial class Employee
 {
-    public class Employee
-    {
-        public int EmpId { get; set; }
-        public string EmpName { get; set; }
-        public double EmpMobile { get; set; }
-        public string EmpEmailId { get; set; }
-        public string EmpDesignation { get; set; }
-        public double EmpSalary { get; set; }   
+    public int EmpId { get; set; }
 
+    public string? EmpName { get; set; }
 
+    public string? EmpMobile { get; set; }
 
+    public string? EmpEmailid { get; set; }
 
-    }
+    public string? EmpDesignation { get; set; }
+
+    public string? EmpSalary { get; set; }
 }
