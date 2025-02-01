@@ -13,6 +13,8 @@ public partial class Employee
 
     public string? EmpEmailid { get; set; }
 
+    public string? EmpCity { get; set; }
+
     public string? EmpDesignation { get; set; }
 
     public string? EmpSalary { get; set; }

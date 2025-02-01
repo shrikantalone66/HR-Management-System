@@ -8,6 +8,8 @@ public partial class HrManagementSystemContext : DbContext
 {
     public HrManagementSystemContext()
     {
+
+
     }
 
     public HrManagementSystemContext(DbContextOptions<HrManagementSystemContext> options)
@@ -21,6 +23,10 @@ public partial class HrManagementSystemContext : DbContext
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
         => optionsBuilder.UseSqlServer("Server=DESKTOP-0CG0PP6\\SQLEXPRESS;Database=Hr_Management_System;trusted_Connection=True;TrustServerCertificate=True;");
 
+
+
+
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Employee>(entity =>
@@ -30,6 +36,9 @@ public partial class HrManagementSystemContext : DbContext
             entity.ToTable("Employee");
 
             entity.Property(e => e.EmpId).HasColumnName("emp_id");
+            entity.Property(e => e.EmpCity)
+                .HasMaxLength(50)
+                .HasColumnName("emp_city");
             entity.Property(e => e.EmpDesignation)
                 .HasMaxLength(50)
                 .HasColumnName("emp_designation");
